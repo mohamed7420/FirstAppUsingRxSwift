@@ -16,6 +16,7 @@
 		8BB8D61527E33017001769C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8D61327E33017001769C0 /* LaunchScreen.storyboard */; };
 		8BB8D61E27E337FF001769C0 /* PhotosCollectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8D61D27E337FF001769C0 /* PhotosCollectionCollectionViewController.swift */; };
 		8BB8D62027E38077001769C0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8D61F27E38077001769C0 /* PhotoCollectionViewCell.swift */; };
+		8BB8D62227E3E884001769C0 /* FilterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8D62127E3E884001769C0 /* FilterServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8BB8D61627E33017001769C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB8D61D27E337FF001769C0 /* PhotosCollectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionCollectionViewController.swift; sourceTree = "<group>"; };
 		8BB8D61F27E38077001769C0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BB8D62127E3E884001769C0 /* FilterServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterServices.swift; sourceTree = "<group>"; };
 		A4257AD66A2C922C35238698 /* Pods_FirstRxSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstRxSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				8BB8D61327E33017001769C0 /* LaunchScreen.storyboard */,
 				8BB8D61627E33017001769C0 /* Info.plist */,
 				8BB8D61F27E38077001769C0 /* PhotoCollectionViewCell.swift */,
+				8BB8D62127E3E884001769C0 /* FilterServices.swift */,
 			);
 			path = FirstRxSwiftApp;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB8D60D27E33016001769C0 /* ViewController.swift in Sources */,
+				8BB8D62227E3E884001769C0 /* FilterServices.swift in Sources */,
 				8BB8D62027E38077001769C0 /* PhotoCollectionViewCell.swift in Sources */,
 				8BB8D61E27E337FF001769C0 /* PhotosCollectionCollectionViewController.swift in Sources */,
 				8BB8D60927E33016001769C0 /* AppDelegate.swift in Sources */,
