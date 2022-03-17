@@ -75,7 +75,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Filter"/>
                                 <connections>
-                                    <action selector="didFilterAction:" destination="bVK-BD-3RI" eventType="touchUpInside" id="zye-qa-flQ"/>
+                                    <action selector="didFilterAction:" destination="bVK-BD-3RI" eventType="touchUpInside" id="lFR-bq-iUx"/>
                                 </connections>
                             </button>
                         </subviews>

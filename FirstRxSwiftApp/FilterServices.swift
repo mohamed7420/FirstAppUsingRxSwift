@@ -11,9 +11,11 @@ import UIKit
 
 class FilterServices{
     
+    static let shared = FilterServices()
+    
     private var context: CIContext
     
-    init(){
+    private init(){
         self.context = CIContext()
     }
     
@@ -27,8 +29,9 @@ class FilterServices{
         if let sourceImage = CIImage(image: inputImage){
             filter.setValue(sourceImage, forKey: kCIInputWidthKey)
             
-            if let ciImg = self.context.createCGImage(filter.outputImage!, from: filter.outputImage!.extent){
-                let processedImage = UIImage(ciImage: ciImg, scale: inputImage.scale, orientation: inputImage.imageOrientation)
+            if let cgImg = self.context.createCGImage(filter.outputImage!, from: filter.outputImage!.extent){
+                
+                let processedImage = UIImage(cgImage: cgImg, scale: inputImage.scale, orientation: inputImage.imageOrientation)
                 completion(processedImage)
             }
         }

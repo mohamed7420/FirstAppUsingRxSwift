@@ -11,7 +11,8 @@ import RxSwift
 
 
 
-class PhotosCollectionCollectionViewController: UICollectionViewController , UICollectionViewDelegateFlowLayout {
+class PhotosCollectionCollectionViewController: UICollectionViewController , UICollectionViewDelegateFlowLayout{
+ 
 
     private var assets = [PHAsset]()
     
@@ -22,6 +23,7 @@ class PhotosCollectionCollectionViewController: UICollectionViewController , UIC
         return selectedSubject.asObservable()
     
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,5 +101,7 @@ class PhotosCollectionCollectionViewController: UICollectionViewController , UIC
             }
         }
     }
+    
+ 
     
 }

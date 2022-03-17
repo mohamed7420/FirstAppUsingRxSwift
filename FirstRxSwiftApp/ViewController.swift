@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     
+    private let filterInstance = FilterServices.shared
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,7 +42,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didFilterAction(_ sender: UIButton){
-        
+        guard let displayedImage = imageView.image else {return}
+        filterInstance.applyFilter(with: displayedImage) { [weak self] filteredImage in
+            DispatchQueue.main.async {
+                self?.imageView.image = filteredImage
+            }
+        }
     }
 
 }
